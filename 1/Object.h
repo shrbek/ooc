@@ -1,7 +1,7 @@
 #ifndef OBJECT_H
 #define OBJECT_H
 
-extern void cont * Object; /* new(Object)  */
-int differ (cont void * a, cont void * b);
+extern void const * Object; /* new(Object)  */
+int differ (const void * a, const void * b);
 
 #endif // OBJECT_H

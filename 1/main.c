@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 #include "new.h"
 #include "Object.h"
@@ -9,7 +10,7 @@ int main ()
 	void * s = new (Set);
 	void * a = add (s, new(Object));
 	void * b = add (s, new(Object));
-	void * c = new (Ooject);
+	void * c = new (Object);
 
 	if(contains(s, a) && contains(s, b))	
 		puts ("OK");
